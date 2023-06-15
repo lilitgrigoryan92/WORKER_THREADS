@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs.promises": "^0.1.2"
+  },
+  "name": "worker_threads",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
