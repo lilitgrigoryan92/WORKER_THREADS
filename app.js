@@ -82,13 +82,14 @@ if (isMainThread) {
   const dirPath = process.argv[2];
   const instance = new Convert(dirPath);
 
+
   instance
   .readFilesCsv()
     .then(({ count, duration }) => {
       console.log(count);
       console.log(duration,"ms");
     })
-    .catch((error) => console.error(error.message));
+    .catch((error) => console.log(error));
 } else {
 
   parentPort.on("message", ({ input, output }) => {
