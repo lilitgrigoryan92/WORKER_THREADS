@@ -50,6 +50,8 @@ class Convert {
 
             worker.on("message", (message) => {
               count += message.count;
+              worker.terminate();
+
               resolve();
             });
 
